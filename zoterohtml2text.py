@@ -1,8 +1,15 @@
 __author__ = 'silvia'
+# Script to extract text content from Zotero HTML items
+# Inspired by Spencer Roberts' tutorial: http://programminghistorian.org/lessons/counting-frequencies-from-zotero-items.html 
+
+
+###############################
+# Import statements
+###############################
+
 #from bs4 import BeautifulSoup
 #from libZotero import zotero
 #import urllib.request
-
 import re
 from pyzotero import zotero
 import requests
@@ -43,7 +50,7 @@ for item in items:
         f.write(webContent)
         f.close()
 
-
+#PROBLEM! ONLY RETRIEVING THE FIRST 25 ITEMS OF MY COLLECTION
 
 ###############################
 # Retrieving url-content with URLLIB
