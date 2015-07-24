@@ -106,7 +106,7 @@ def list_from_csv(single_csv):
     return lista
 
 ###############################
-# Reading my collection w/libZotero
+# Reading my collection w/libZotero (DID NOT WORK)
 ###############################
 
 #zlib = zotero.Zotero('group','155975','<null>','9GLmvmZ1K1qGAz9QWcdlyf6L')
@@ -114,13 +114,13 @@ def list_from_csv(single_csv):
 
 ###############################
 # Reading my collection w/pyzotero
-# note:
+# note: The Read API calls return the first 25 items by default
+# solution: zlib.everything() 
 ###############################
 # My own user ID / api key
-#zlib = zotero.Zotero('1677289','user','4g5SrCY6IUW1x6LPUfXrzVGe')
-#Collection: https://www.zotero.org/silviaegt/items/collectionKey/THA7JMA5
-#items = zlib.collection_items('THA7JMA5', limit=85)
-#items = zlib.everything(zlib.collection_items('THA7JMA5'))
+zlib = zotero.Zotero('1677289','user','4g5SrCY6IUW1x6LPUfXrzVGe')
+Collection: https://www.zotero.org/silviaegt/items/collectionKey/THA7JMA5
+items = zlib.everything(zlib.collection_items('THA7JMA5'))
 
 ###############################
 # Retrieving url-CONTENTS w/REQUESTS
@@ -265,7 +265,7 @@ with open('AteneoMexicanoEl.txt') as f:
 ###############################
 # From html-segment to txt
 ##############################
-
+"""
 os.chdir('asoc_au')
 for file in glob.glob("*.html"):
     try:
@@ -273,3 +273,4 @@ for file in glob.glob("*.html"):
     except IOError as exc:
         if exc.errno != errno.EISDIR:
             raise
+"""
