@@ -13,8 +13,8 @@
     - libicu (Para Ubuntu se tuvo que instalar apt-get install libicu-dev)
     - zlib  (ara Ubuntu se tuvo que instalar apt-get install zlib1g-dev)   
   * Una vez revisadas abro la carpeta de Freeling en la terminal (root@NombreDeLap:/home/user/Documents/FreeLing-master#) y escribo lo siguiente:
-```autoreconf --install``
- ```./configure```
-```make```(En este paso es mejor añadir "make -j 4" para que el proceso corra en los cuatro núcleos y sea más rápido)
-```make install```
+    -autoreconf --install
+    ./configure
+    make (En este paso es mejor añadir "make -j 4" para que el proceso corra en los cuatro núcleos y sea más rápido)
+    make install
 
