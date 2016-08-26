@@ -1,6 +1,7 @@
 #Instrucciones para instalar Freeling
 
 *Pre: me logueé como super user (sudo su)
+
 1. Bajé el Zip de la página de Github (https://github.com/TALP-UPC/FreeLing)
 2. Seguí las instrucciones del archivo INSTALL que son:
   * Revisar que se tenga lo siguiente [Se revisa usando: apt-get install (sudo no es importante si estás en super user)]
